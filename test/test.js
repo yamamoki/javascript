@@ -1,8 +1,10 @@
 let user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
+
 while ((user_hand != "グー") && (user_hand != "チョキ") && (user_hand != "パー") && (user_hand != null)){
   alert('グー・チョキ・パーのいずれかを入力して下さい');
   user_hand = prompt('じゃんけんの手をグー、チョキ、パーから選んでください。');
 }
+
 let js_hand = getJShand();
 let judge = winLose(user_hand, js_hand);
 
